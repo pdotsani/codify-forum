@@ -83,8 +83,41 @@
         <!-- Button link for new post -->
         <div class="row text-center">
           <div class="col-md-6 col-md-offset-3 background-white new-post-button-section">
-            <button type="button" class="btn btn-primary btn-lg btn-block">New Post</button> 
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#newPostModal">New Post</button> 
           </div>
+        </div>
+          
+        <!-- New Post Modal --> 
+        <div class="modal fade" id="newPostModal" tabindex="-1" role="dialog" aria-labelledby="newPostModalLabel" aria-hidden="true"> 
+          <div class="modal-dialog"> 
+            <div class="modal-content"> 
+              <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal"><spanaria-hidden="true">×</span><spanclass="sr-only"></span></button> 
+                <h4 class="modal-title" id="newPostModalLabel">New Post</h4> 
+              </div> 
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-xs-8">
+                    <input type="text" class="form-control" placeholder="Title">
+                  </div>
+                  <div class="col-xs-4">
+                    <select class="form-control"> 
+                      <option selected disabled>keyword</option>
+                      <option>Projects</option>
+                      <option>Tutorials</option> 
+                      <option>Fun</option> 
+                      <option>Misc</option> 
+                    </select>
+                  </div>
+                </div> 
+                <textarea class="form-control" rows="3" placeholder="Post"></textarea> 
+              </div> 
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> 
+                <button type="button" class="btn btn-primary">Post</button> 
+              </div> 
+            </div> 
+          </div> 
         </div>
 
         <!-- Template for post -->

@@ -180,6 +180,17 @@ a:hover {
   border: 1px solid grey;
 }
 
+/*-NEW POST MODAL-*/
+.modal-title#newPostModalLabel {
+  font-family: biko;
+  font-size: 2em;
+}
+
+.modal-body > textarea.form-control {
+  resize: none;
+  margin-top: 15px;
+}
+
 /* -MAIN POST- */
 .post-main {
   border: 1px solid grey;
