@@ -5,14 +5,22 @@
    ========================================================================== */
 
 /*====================
-	LANDING PAGE
-	====================*/
-
-/* Base stylings */
+  BASE STYLINGS 
+  ====================*/
 @font-face {
  font-family: biko;
  src: url("../fonts/biko/Biko_Regular.otf");
 }
+
+.search-focus {
+  border-color: #6C7A89 !important;
+}
+
+
+/*====================
+  LANDING PAGE
+  ====================*/
+
 
 /* Top-Bottom margin seperation */
 .standard-top-bottom-margin {
@@ -136,16 +144,19 @@ a:hover {
   font-size: 15px;
 }
 #nav-searchbar  {
-  border: 1px solid grey;
   padding: 2.5px 5px;
   margin-top: 15px;
-  border: 2px solid #ccc !important;
+  border: 2px solid #ccc;
   border-radius: 0 !important;
 }
 .span2,
 .add-on {
   border: 0 !important;
   padding: 0 !important;
+}
+.span2:focus {
+  outline-offset: 0;
+  outline: 0;
 }
 .span2::-moz-placeholder {
   color: #DADFE1;
