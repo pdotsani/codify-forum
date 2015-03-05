@@ -7,15 +7,17 @@ $(document).ready(function() {
 		$(this).parent().removeClass('search-focus');
 	});
 
-	// Show & hide replies/new reply
+	// Show & hide replies/new reply within post template
 	$("#show-reply").on("click", function() {
-		console.log('toggled show reply');
-		$(".replies").toggleClass('hidden').
-		$(".replies").toggleClass('wrapped-up');
+		// console.log($(this).parentsUntil("#post-template").last().next());
+		$(this).parentsUntil("#post-template")
+			.last().next().toggleClass('hidden');
+		$(this).parentsUntil("#post-template")
+			.last().next().toggleClass('wrapped-up');
 	});
 	$("#create-reply").on("click", function() {
-		console.log('toggled create reply');
-		$(".post-reply-section").toggleClass('hidden').
-		$(".post-reply-section").toggleClass('wrapped-up');
+		// console.log($(this).parentsUntil("#post-template").last().next().next().children());
+		$(this).parentsUntil("#post-template")
+			.last().next().next().children().toggleClass('hidden');
 	});
 });

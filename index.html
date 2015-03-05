@@ -58,6 +58,9 @@
                 <li class="visible-xs-inline">
                   <a href="">Edit Profile</a>
                 </li>
+                <li class="visible-xs-inline">
+                  <a href="">Log Off</a>
+                </li>
 
                 <!-- Browser menu options -->
                 <li> 
@@ -119,39 +122,43 @@
             </div> 
           </div> 
         </div>
+        <!-- New Post Modal End -->
 
-        <!-- Template for post -->
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 background-white post-main">
-            <img src="img/user.jpg">
-            <ul class="list-group">
-              <li class="list-group-item"><a id="create-reply"><i class="fa fa-reply"></i></a></li>
-              <li class="list-group-item"><a id="show-reply"><span class="badge">2</span></a></li>
-            </ul>
-            <h5><span>Post Title</span> - <span>username</span> - <span>date/time</span> - <span>keyword</span></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum totam in, amet, rerum voluptate quibusdam quasi porro deserunt. Deserunt id consequatur quaerat necessitatibus. Vel quasi, nemo numquam sit? Aut, quis.</p>
-          </div>
-        </div>
-
-        <!-- Reply sample -->
-        <div class="replies hidden wrapped-up">
+        <!-- FULL POST TEMPLATE (3 SECTIONS: POST,REPLIES,NEW-REPLY) -->
+        <div id="post-template">
+          <!-- Template for post -->
           <div class="row">
-            <div class="col-md-6 col-md-offset-3 post-main-reply">
-              <img src="img/user-2.jpg">
-              <h5><span>username</span> - <span>date/time</span></h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nobis maiores laboriosam aliquid non facilis, nemo accusamus sunt ducimus. Cupiditate pariatur unde suscipit exercitationem. Eum ipsam, praesentium eos quia obcaecati.</p>
+            <div class="col-md-6 col-md-offset-3 background-white post-main">
+              <img src="img/user.jpg">
+              <ul class="list-group">
+                <li class="list-group-item"><a id="create-reply"><i class="fa fa-reply"></i></a></li>
+                <li class="list-group-item"><a id="show-reply"><span class="badge">2</span></a></li>
+              </ul>
+              <h5><span id="post-title">Post Title</span><span id="timestamp"> - <span id="username">username</span> - <span id="date-time">date/time</span> - <span id="keyword">keyword</span> -</span></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum totam in, amet, rerum voluptate quibusdam quasi porro deserunt. Deserunt id consequatur quaerat necessitatibus. Vel quasi, nemo numquam sit? Aut, quis.</p>
+            </div>
+          </div>
+
+          <!-- Reply sample -->
+          <div class="replies hidden wrapped-up">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 post-main-reply">
+                <img src="img/user-2.jpg">
+                <h5><span>username</span> - <span>date/time</span></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nobis maiores laboriosam aliquid non facilis, nemo accusamus sunt ducimus. Cupiditate pariatur unde suscipit exercitationem. Eum ipsam, praesentium eos quia obcaecati.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template for new reply -->
+          <div class="row text-center">
+            <div class="col-md-6 col-md-offset-3 post-reply-section hidden">
+              <textarea class="form-control" rows="3" placeholder="Post"></textarea>
+              <button type="button" class="btn btn-default btn-lg btn-block">Reply</button> 
             </div>
           </div>
         </div>
-
-        <!-- Template for new reply -->
-        <div class="row text-center">
-          <div class="col-md-6 col-md-offset-3 post-reply-section hidden">
-            <textarea class="form-control" rows="3" placeholder="Post"></textarea>
-            <button type="button" class="btn btn-default btn-lg btn-block">Reply</button> 
-          </div>
-        </div>
-
+        <!-- FULL POST TEMPLATE END -->
 
 
         <!-- Button link for more posts -->

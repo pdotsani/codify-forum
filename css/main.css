@@ -140,7 +140,7 @@ a:hover {
 /* -NAV STYLES (MAIN.HTML)-*/
 .navbar {
   font-family: arial;
-  border-bottom: 4px solid #049372;
+  border-bottom: 1px solid grey;
 }
 
 .navbar-nav > li > a {
@@ -237,6 +237,18 @@ a:hover {
 }
 .post-main > h5 {
   margin-bottom: 0;
+}
+.post-main > h5 > span#post-title {
+  font-size: 120%;
+  font-weight: bold;
+}
+.post-main > h5 > span#timestamp {
+  color: #87D37C;
+}
+.post-main > h5 > span#username,
+.post-main > h5 > span#date-time,
+.post-main > h5 > span#keyword {
+  font-size: 75%;
 }
 .post-main > p {
   margin: 0 0 5px 0;
