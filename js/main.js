@@ -9,15 +9,17 @@ $(document).ready(function() {
 
 	// Show & hide replies/new reply within post template
 	$("#show-reply").on("click", function() {
-		// console.log($(this).parentsUntil("#post-template").last().next());
-		$(this).parentsUntil("#post-template")
-			.last().next().toggleClass('hidden');
-		$(this).parentsUntil("#post-template")
-			.last().next().toggleClass('wrapped-up');
+		var getToReplies = $(this).parentsUntil("#post-template")
+			.last().siblings(".replies");
+
+		getToReplies.toggleClass('hidden');
+		getToReplies.toggleClass('wrapped-up');
 	});
 	$("#create-reply").on("click", function() {
-		// console.log($(this).parentsUntil("#post-template").last().next().next().children());
-		$(this).parentsUntil("#post-template")
-			.last().next().next().children().toggleClass('hidden');
+		var getToCreateReply = $(this).parentsUntil("#post-template")
+				.last().siblings(".post-reply");
+
+		getToCreateReply.toggleClass('hidden');
+		getToCreateReply.toggleClass('wrapped-up');
 	});
 });
