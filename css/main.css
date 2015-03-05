@@ -16,6 +16,14 @@
   border-color: #6C7A89 !important;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.wrapped-up {
+  height: 0;
+}
+
 
 /*====================
   LANDING PAGE
@@ -105,6 +113,11 @@ a:hover {
  opacity: 0.5;
 }
 
+.modal-header {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
 /*====================
 	LANDING PAGE END
 	====================*/
@@ -169,6 +182,11 @@ a:hover {
   color: #DADFE1;
 }
 
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+  background-color: transparent !important;
+}
+
 /* -POST BUTTON SECTIONS- */
 
 .new-post-button-section {
@@ -177,7 +195,7 @@ a:hover {
   border: 1px solid grey;
 }
 
-.post-reply-button-section {
+.post-reply-section {
   background: #F2F1EF;
   padding-top:15px;
   padding-bottom:15px;
@@ -205,7 +223,7 @@ a:hover {
 /* -MAIN POST- */
 .post-main {
   border: 1px solid grey;
-  max-height: 100px;
+  min-height: 100px;
   max-width: 100%; 
 }
 .post-main > img {
@@ -221,7 +239,7 @@ a:hover {
   margin-bottom: 0;
 }
 .post-main > p {
-  margin: 0;
+  margin: 0 0 5px 0;
   text-align:left;
 }
 .post-main > ul {
@@ -255,11 +273,18 @@ a:hover {
   text-align: center;
 }
 
+#show-reply:hover, 
+#create-reply:hover {
+  cursor: pointer;
+} 
+
 /* -MAIN POST REPLY- */
 .post-main-reply {
   background: #F2F1EF;
   border: 1px solid grey;
 }
+
+
 .post-main-reply > img {
   float: left;
   height: 40px;
@@ -274,6 +299,12 @@ a:hover {
 }
 .post-main-reply > p {
   margin-left: 55px;
+}
+
+/*-create reply-*/
+.post-reply-section > textarea.form-control {
+  resize: none;
+  margin-bottom: 15px;
 }
 
 /*=============================
