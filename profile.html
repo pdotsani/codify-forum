@@ -132,17 +132,48 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 background-white post-main">
-          <img src="img/user.jpg">
-          <ul class="list-group">
-            <li class="list-group-item"><a href=""><i class="fa fa-reply"></i></a></li>
-            <li class="list-group-item"><a href=""><span class="badge">0</span></a></li>
-          </ul>
-          <h5><span>username</span> - <span>date/time</span> - <span>keyword</span></h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum totam in, amet, rerum voluptate quibusdam quasi porro deserunt. Deserunt id consequatur quaerat necessitatibus. Vel quasi, nemo numquam sit? Aut, quis.</p>
+      <!-- FULL POST TEMPLATE (3 SECTIONS: POST,REPLIES,NEW-REPLY) -->
+        <div id="post-template">
+          <!-- Template for post -->
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 background-white post-main">
+              <img src="img/user.jpg">
+              <ul class="list-group">
+                <li class="list-group-item"><a id="create-reply"><i class="fa fa-reply"></i></a></li>
+                <li class="list-group-item"><a id="show-reply"><span class="badge">2</span></a></li>
+              </ul>
+              <h5><span id="post-title">Post Title</span><span id="timestamp"> - <span id="username">username</span> - <span id="date-time">date/time</span> - <span id="keyword">keyword</span> -</span></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum totam in, amet, rerum voluptate quibusdam quasi porro deserunt. Deserunt id consequatur quaerat necessitatibus. Vel quasi, nemo numquam sit? Aut, quis.</p>
+            </div>
+          </div>
+
+          <!-- Reply sample -->
+          <div class="replies hidden wrapped-up">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 post-main-reply">
+                <img src="img/user-2.jpg">
+                <h5><span>username</span> - <span>date/time</span></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nobis maiores laboriosam aliquid non facilis, nemo accusamus sunt ducimus. Cupiditate pariatur unde suscipit exercitationem. Eum ipsam, praesentium eos quia obcaecati.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template for new reply -->
+          <div class="post-reply hidden wrapped-up row text-center">
+            <div class="col-md-6 col-md-offset-3 post-reply-section">
+              <textarea class="form-control" rows="3" placeholder="Post"></textarea>
+              <div class="row">
+                <div class="col-xs-2 col-xs-offset-6">
+                  <button type="button" id="cancel-reply" class="btn btn-default btn-lg btn-block">Cancel</button> 
+                </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Reply</button> 
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <!-- FULL POST TEMPLATE END -->
 
       <!-- Code to call quick modal profile preview (code from codify tutorial) -->
         <!-- Button trigger modal --> 
@@ -155,11 +186,8 @@
 
               <div class="modal-content"> 
 
-                <div class="modal-header"> 
-                  <button type="button" class="close" data-dismiss="modal"><spanaria-hidden="true">×</span><spanclass="sr-only"></span></button> 
-                </div>
-
                 <div class="modal-body text-center"> 
+                  <button type="button" class="close" data-dismiss="modal"><spanaria-hidden="true">×</span><spanclass="sr-only"></span></button>  
                   <img src="img/user.jpg" style="height:100px;width:100px;border-radius:50%;">
                   <h1><span>Username</span></h1>
                   <p>Bio here Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam quo ratione minus distinctio, atque odio magnam alias unde ullam libero ea debitis magni sunt sit vitae inventore, porro temporibus!</p>
@@ -192,5 +220,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <script src="js/main.js"></script>
   </body>
 </html>
