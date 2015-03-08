@@ -56,17 +56,76 @@
       </div>
       <div class="row smaller-top-bottom-margin">
         <div class="col-md-2 col-md-offset-5">
-          <button type="button" class="btn btn-default btn-lg btn-block">Sign-Up</button> 
+          <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#signUpModal">
+            Sign-Up
+          </button> 
         </div>
       </div>
       <!-- Buttons End -->
       
-      <div class="row text-center smaller-top-bottom-margin">
-        <a href="">I forgot my username/password</a>
+      <div class="col-md-12 text-center smaller-top-bottom-margin">
+        <a type="button" data-toggle="modal" data-target="#forgotModal" style="cursor: pointer;">
+          forgot username/password
+        </a>
       </div>
       <!-- Signin End -->
     </div>
 
+    <!--SIGN UP w/ modal HTML-->
+          <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><spanaria-hidden="true">×</span><spanclass="sr-only"></span></button> 
+                  <h1 class="text-center">Sign Up</h1>
+                  <h3 class="text-center">Be part of the codify community</h3> 
+                </div>
+
+                <div class="modal-body text-center">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <input type="text" class="form-control" placeholder="Name">
+                      <input type="text" class="form-control" placeholder="Username">
+                      <input type="text" class="form-control" placeholder="email">
+                      <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                  </div>
+
+                  <textarea class="form-control" rows="5" placeholder="About"></textarea>
+                </div>
+                <div class="modal-footer"> 
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>             
+              </div>
+            </div>
+          </div>
+          <!--SIGN UP w/ modal HTML END-->
+
+          <!--FORGOT PASSWORD w/ modal HTML-->
+          <div class="modal fade" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><spanaria-hidden="true">×</span><spanclass="sr-only"></span></button> 
+                  <h1 class="text-center">Forgot Your Password?</h1> 
+                </div>
+
+                <div class="modal-body text-center">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <input type="text" class="form-control" placeholder="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer"> 
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send Email</button>
+                </div>             
+              </div>
+            </div>
+          </div>
+          <!--FORGOT PASSWORD w/ modal HTML END-->
 
   
 
