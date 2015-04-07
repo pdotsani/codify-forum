@@ -185,6 +185,15 @@ a:hover {
   color: #DADFE1;
 }
 
+/* -DIV INFO ALERT-*/
+div.alert {
+  padding: 10px;
+  margin: 9px 15px;
+}
+div.alert > span {
+  font-weight: bold;
+}
+
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a:hover {
   background-color: transparent !important;

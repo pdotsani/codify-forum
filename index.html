@@ -28,6 +28,7 @@
             <div class="navbar-header"> 
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> 
               <span class="sr-only">Toggle navigation</span>
+              <div class="alert alert-info alert-dismissable visible-xs-inline" role="alert">You have <span>10</span> new replies</div>
               <!-- Use as icon for dropdown menu -->
               <img src="img/user.jpg" class="navbar-img">
               </button> 
@@ -37,6 +38,9 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <!-- Use jquery to toggle searchbar open/close -->
+                <li class="hidden-xs">
+                  <div class="alert alert-info alert-dismissable" role="alert">You have <span>10</span> new replies</div>
+                </li>
                 <li>
                   <div id="nav-searchbar" class="input-prepend">
                     <span class="add-on"><i class="fa fa-search"></i></span>
