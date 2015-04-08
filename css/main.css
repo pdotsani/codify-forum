@@ -188,7 +188,7 @@ a:hover {
 /* -DIV INFO ALERT-*/
 div.alert {
   padding: 10px;
-  margin: 9px 15px;
+  margin: 5px 15px;
 }
 div.alert > span {
   font-weight: bold;
