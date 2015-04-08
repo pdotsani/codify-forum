@@ -146,6 +146,22 @@ a:hover {
   box-shadow:         0px 5px 2px 0px rgba(200, 200, 200, 0.5);
 }
 
+.navbar-brand {
+  padding: 5px 0 0 10px;
+}
+.navbar-brand > img {
+  height: 100%;
+}
+
+@media(max-width:767px) {
+  .navbar-brand { 
+    padding: 35px 0px 0px 25px;
+  } 
+  .navbar-brand > img {
+    height: 100%;
+  }
+}
+
 .navbar-nav > li > a {
   padding: 5px 15px;
 }
@@ -161,7 +177,7 @@ a:hover {
 }
 #nav-searchbar  {
   padding: 2.5px 5px;
-  margin-top: 15px;
+  margin: 15px 15px 0px 15px;
   border: 2px solid #ccc;
   border-radius: 0 !important;
 }
